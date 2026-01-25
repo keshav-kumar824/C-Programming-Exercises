@@ -84,6 +84,83 @@ struct Task {
     int taskStatus;         // Completion status (0/1)
 };
 ```
+Sure! Here’s your **Problem 3 README** rewritten in the **same pattern, style, and structure** as your Problem 2 README:
+
+---
+
+# Problem 3: Employees Salary System
+
+File: `employee_salary.c`
+
+A simple menu-driven employee salary management system that allows users to manage employee payroll:
+
+* ✅ Input multiple employees with name, ID, basic salary, allowances, and deductions
+* ✅ Update salary details for specific employees
+* ✅ Automatically calculate bonus based on salary slabs (every 10,000 adds 1000 bonus)
+* ✅ Compute net salary using formula: `Net Salary = Basic Salary + Allowances + Bonus - Deductions`
+* ✅ Display all employee details with calculated net salary
+
+**Key Concepts:** Structures, menu-driven interface, recursion, array manipulation, user input handling
+
+**Sample Output:**
+
+```
+No of Employees: 1
+
+=====Employee Form=====
+1. Input
+2. Update Salary
+3. Display
+4. Exit
+Enter Choice (1-4): 1
+
+Enter name: John Doe
+Enter Id: 101
+Basic Salary: 25000
+Enter Allowance: 5000
+Enter Deductions: 2000
+
+=====Employee 1=====
+Name: John Doe
+Id: 101
+Basic Salary: 25000.00
+Allowance: 5000.00
+Deductions: 2000.00
+Bonus: 2000.00
+Net Salary: 30000.00
+```
+
+**Functions Implemented:**
+
+* `input(struct employee e[], int n)` - Captures employee details safely, including names with spaces
+* `update_salary(struct employee *e)` - Updates salary, allowance, or deductions for a given employee
+* `bonus(struct employee *e, float basic_salary)` - Recursively calculates bonus based on salary slabs
+* `calculateNetSalary(struct employee *e)` - Computes net salary including bonus
+* `display(struct employee e[], int n)` - Presents all employee details in a formatted layout
+
+**Structure Definition:**
+
+```c
+struct employee {
+    char name[100];        // Employee full name
+    int id;                // Employee ID
+    float basic_salary;    // Base salary
+    float allownces;       // Allowances
+    float deductions;      // Deductions
+    float bonus;           // Bonus based on salary slab
+    float net_salary;      // Calculated net salary
+};
+```
+**Notes:**
+
+* Maximum employees supported: 50
+* Bonus calculation uses recursion
+* Names are input using `fgets()` to allow spaces
+
+---
+
+
+
 
 **Technical Highlights:**
 - Uses `strcspn()` to remove trailing newlines from `fgets()` input
