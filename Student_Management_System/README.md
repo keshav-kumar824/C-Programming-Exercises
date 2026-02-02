@@ -152,18 +152,6 @@ student_management.c
 └── Main Menu Loop
 ```
 
-## Future Enhancements
-
-Potential features for future versions:
-- [ ] Add more subjects
-- [ ] Implement database integration (MySQL/SQLite)
-- [ ] Add graphical user interface (GUI)
-- [ ] Export reports to PDF/Excel
-- [ ] Add attendance tracking
-- [ ] Implement user authentication
-- [ ] Add backup and restore functionality
-- [ ] Generate graphical charts for performance analysis
-
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request. For major changes:
@@ -182,18 +170,11 @@ Contributions are welcome! Please feel free to submit a Pull Request. For major 
 
 This project is open source and available under the [MIT License](LICENSE).
 
-## Author
-
-**Your Name**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- Email: your.email@example.com
 
 ## Acknowledgments
 
 - Developed as part of C programming practice
 - Thanks to the C programming community for inspiration and best practices
-
-## Screenshots
 
 ### Main Menu
 ```
